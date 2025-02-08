@@ -37,7 +37,8 @@ tracks <- lapply(track_metadata$id,
                  }) |> 
   do.call(rbind, args = _)
 
+dir.create("dist")
 tracks |> 
-  st_write("rva-surveillance-survey.pmtiles",
+  st_write("dist/rva-surveillance-survey.pmtiles",
            driver = "PMTiles",
            dataset_options = c("MINZOOM=0", "MAXZOOM=15"))
