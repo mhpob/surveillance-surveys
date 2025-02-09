@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>MapRVA surveillance survey tracks</title>
+
+    <style>
+      html,
+      body,
+      iframe {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe></iframe>
+    <script>
+      document.querySelector(
+        "iframe"
+      ).src = `https://overpass-ultra.us#map&query=url:${new URL(
+        "./query.ultra",
+        window.location
+      )}`;
+    </script>
+  </body>
+</html>
+
