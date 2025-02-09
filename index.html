@@ -19,11 +19,11 @@
     </style>
   </head>
   <body>
-    <iframe src="https://overpass-ultra.us#map&query=url:"></iframe>
+    <iframe></iframe>
     <script>
       document.querySelector(
         "iframe"
-      ).src = `${new URL(
+      ).src = `https://overpass-ultra.us#map&query=url:${new URL(
         "./query.ultra",
         window.location
       )}`;
