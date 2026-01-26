@@ -56,7 +56,7 @@ style:
   sources:
     tracks:
       type: vector
-      url: pmtiles://https://mhpob.github.io/surveillance-surveys/rva-surveillance-survey.pmtiles
+      url: pmtiles://https://mhpob.github.io/surveillance-surveys/rva-surveillance-survey.pmtiles.gz
     mask:
       type: geojson
       data: https://maprva.org/map-data/greater-rva-mask.geojson
