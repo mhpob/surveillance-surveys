@@ -39,6 +39,9 @@ tracks <- lapply(track_metadata$id,
 
 dir.create("dist")
 tracks |> 
-  st_write("dist/rva-surveillance-survey.pmtiles.gz",
+  st_write("dist/rva-surveillance-survey.pmtiles",
            driver = "PMTiles",
            dataset_options = c("MINZOOM=0", "MAXZOOM=15"))
+
+# Rename due to GH Pages + Firefox bug
+file.rename("dist/rva-surveillance-survey.pmtiles", "dist/rva-surveillance-survey.pmtiles.gz")
